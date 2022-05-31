@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html ,
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+
+i ,
+button {
+    cursor: pointer;
+}
+
+.wrap-notes-app {
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgray;
+    padding: 1rem;
+}
+
+#wrap-search {
+    position: fixed;
+    inset: 0 0 calc(100vh - 50px);
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search {
+    background-color: lightgray;
+    border: none;
+    outline: none;
+    width: 60%;
+    padding: 0.6rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+#search::placeholder {
+    color: white;
+}
+
+#wrap-notes {
+    height: 80%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-content: flex-start;
+    gap: 5%;
+}
+
+.nota {
+    padding: 1rem;
+    background-color: white;
+}
+
+.hide {
+    display: none;
+}
+
+.fa-arrows-alt:hover {
+    color: gold;
+}
+
+#wrap-btns-notes-app {
+    position: fixed;
+    inset: calc(100vh - 60px) 0 0;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#btn-volume {
+    color: gold;
+}
+
+#btn-open-edit {
+    border: none;
+    font-weight: bold;
+    color: white;
+    height: 25px;
+    width: 25px;
+    background-color: gold;
+    border-radius: 50%;
+}
+
+#editor {
+    position: fixed;
+    inset: 0;
+    height: 100vw;
+    width: 100vw;
+    background-color: whitesmoke;
+    transition: all 0.8s;
+}
+
+.close {
+    margin-left: 100%;
+}
+
+.open {
+    margin-left: 0;
+}
+
+#wrap-edit-title #wrap-edit-content {
+    width: 100%;
+}
+
+#edit-title {
+    background: none;
+    outline: none;
+    border: none;
+    height: 20vh;
+    width: 100%;
+    font-size: 24px;
+    padding: 1rem;
+    border-bottom: 1px solid gray;
+    margin-bottom: 1rem;
+}
+
+#content {
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 24px;
+    padding: 1rem;
+    height: 50vh;
+    resize: none;
+}
+
+ #wrap-btns-edit {
+     display: flex;
+     justify-content: space-between;
+     padding: 1rem;
+ }
+
+ #btn-edit-close:hover {
+     color: red;
+ }
+ 
+ #btn-save-new-note:hover {
+     color: green;
+ } 
+ 
+
+@media (min-width:900px){
+    #wrap-notes {
+        height: 80%;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-content: flex-start;
+        gap: 5%;
+    }   
+}

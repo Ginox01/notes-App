@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Note App</title>
+</head>
+<body>
+    <section class="wrap-notes-app">
+        <div id="wrap-search">
+            <input type="text" id="search" placeholder="Ricerca nota">
+        </div>
+        <div id="wrap-notes">
+            <div id="note-1" class="nota show" draggable="true" data-drag="false">
+                <i class="fas fa-arrows-alt"></i>
+                <p>Prima Nota</p>
+            </div>
+            <div id="note-2" class="nota show" draggable="true" data-drag="false">
+                <i class="fas fa-arrows-alt"></i>
+                <p>Seconda Nota</p>
+            </div>
+            <div id="note-3" class="nota show" draggable="true" data-drag="false">
+                <i class="fas fa-arrows-alt"></i>
+                <p>Terza Nota</p>
+            </div>
+            <div id="note-4" class="nota show" draggable="true" data-drag="false">
+                <i class="fas fa-arrows-alt"></i>
+                <p>Quarta Nota</p>
+            </div>
+        </div>
+        <div id="wrap-btns-notes-app">
+            <i id="btn-volume" class="fas fa-volume-up attivo"></i>
+            <i id="btn-trash" class="fas fa-trash"></i>
+            <button id="btn-open-edit">+</button>
+        </div>
+
+    </section>
+    <section id="editor" class="close">
+        <div id="wrap-edit-title">
+            <input type="text" id="edit-title" placeholder="Titolo*">
+        </div>
+        <div id="wrap-edit-content">
+            <textarea  id="content" spellcheck="false" placeholder="Inserisci contenuto"></textarea>
+        </div>
+        <div id="wrap-btns-edit">
+            <i id="btn-edit-close" class="fas fa-close"></i>
+            <i id="btn-save-new-note" class="fas fa-check"></i>
+        </div>
+    </section>
+    
+    <script src="./js/index.js"></script>
+</body>
+</html>
